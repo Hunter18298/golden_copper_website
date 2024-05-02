@@ -4,12 +4,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import NavbarCopper from './navbar';
 import Footer from './footer';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import SwiperCore, { Autoplay } from 'swiper';
+import PartnersSection from './partner';
 
-// Install Swiper modules
-SwiperCore.use([Autoplay]);
+
+
 
 export default function Home() {
   return (
@@ -57,44 +55,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 bg-gradient-to-r from-gray-100 to-gray-300">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-800">Our Partners</h2>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
-            loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="mt-8"
-          >
-            <SwiperSlide>
-              <img src="/partner-1.png" alt="Partner 1" className="mx-auto shadow-lg rounded-lg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/partner-2.png" alt="Partner 2" className="mx-auto shadow-lg rounded-lg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/partner-3.png" alt="Partner 3" className="mx-auto shadow-lg rounded-lg" />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </section>
+      <PartnersSection />
+
 
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="hover:scale-105 transition-transform duration-300">
-              <Image src="/gallery-1.jpg" alt="Gallery Image 1" width={300} height={200} layout="responsive" className="rounded-lg shadow-lg" />
+              <Image src="/gallery-1.jpeg" alt="Gallery Image 1" width={300} height={200} layout="responsive" className="rounded-lg shadow-lg" />
             </div>
             <div className="md:col-span-2 hover:scale-105 transition-transform duration-300">
-              <Image src="/gallery-2.jpg" alt="Gallery Image 2" width={600} height={400} layout="responsive" className="rounded-lg shadow-lg" />
+              <Image src="/about-image.jpg" alt="Gallery Image 2" width={600} height={400} layout="responsive" className="rounded-lg shadow-lg" />
             </div>
             <div className="hover:scale-105 transition-transform duration-300">
-              <Image src="/gallery-3.jpg" alt="Gallery Image 3" width={300} height={200} layout="responsive" className="rounded-lg shadow-lg" />
+              <Image src="/about-image.jpg" alt="Gallery Image 3" width={300} height={200} layout="responsive" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
                 <div>
                     <h3 className="font-bold text-lg mb-4">Golden Copper Company</h3>
                     <p className="text-sm">
-                        Leading the industry with high-quality copper cables and wiring solutions tailored to the evolving needs of our global clientele.
+                        Golder Copper company for general trading and electrical materials trading / LTD - Iraq Erbil Kuran Makhmur street.
                     </p>
                 </div>
                 <div>
@@ -21,6 +22,20 @@ export default function Footer() {
                         <li><Link href="/gallery" className="hover:text-yellow-300">Gallery</Link></li>
                         <li><Link href="#" className="hover:text-yellow-300">Contact</Link></li>
                     </ul>
+                </div>
+                <div>
+                    <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+                    <div className="text-sm space-y-2">
+                        <ul className="text-sm space-y-2">
+                            <li><Link href="tel:009647501000909" className="hover:text-yellow-300"><FontAwesomeIcon icon={faPhone} size="lg" /> +964(750) 100-0909</Link></li>
+                            <li><Link href="tel:009647504623890" className="hover:text-yellow-300">+964(750) 462-3890</Link></li>
+                            <li><Link href="mailto:goldencopperco@yahoo.com" className="hover:text-yellow-300"><FontAwesomeIcon icon={faEnvelope} size="lg" /> goldencopperco@yahoo.com</Link></li>
+
+                        </ul>
+
+
+
+                    </div>
                 </div>
                 <div>
                     <h3 className="font-bold text-lg mb-4">Follow Us</h3>

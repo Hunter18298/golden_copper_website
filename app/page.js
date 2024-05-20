@@ -1,13 +1,9 @@
-// Import necessary libraries and components
 "use client"
 import Head from 'next/head';
 import Image from 'next/image';
 import NavbarCopper from './navbar';
 import Footer from './footer';
 import PartnersSection from './partner';
-
-
-
 
 export default function Home() {
   return (
@@ -55,8 +51,24 @@ export default function Home() {
         </div>
       </section>
 
-      <PartnersSection />
+      {/* Google Map Embed */}
+      <section className="bg-white py-12 px-4 md:px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Our Location</h2>
+          <div className="relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.3554394345456!2d44.0019500390608!3d36.173589585895485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4007233da631b1a1%3A0x68cb72d84e95b636!2s52C2%2BW8R%2C%20Erbil%2C%20Erbil%20Governorate!5e0!3m2!1sen!2siq!4v1716220983858!5m2!1sen!2siq`}
+              width="600"
+              height="450"
+              style={{ border: 0, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
 
+      <PartnersSection />
 
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto">
